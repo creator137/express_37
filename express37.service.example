@@ -6,8 +6,8 @@ Wants=network-online.target
 [Service]
 Type=simple
 User=express37
-WorkingDirectory=/opt/express37
-ExecStart=/opt/express37/.venv/bin/python /opt/express37/main.py
+WorkingDirectory=/opt/express37/app
+ExecStart=/opt/express37/.venv/bin/python /opt/express37/app/main.py
 Restart=always
 RestartSec=5
 
